@@ -6,6 +6,7 @@ body {
     background-size:cover;
     background-position: center;
     background-repeat: no-repeat;
+    min-height: 100vh;
     animation: breath 7s ease-in-out infinite;
     font-family: 'Lato', sans-serif;
     color: #fff;
@@ -40,13 +41,15 @@ ion-icon {
 }
 
 @keyframes breath {
-    0%   { background-size: 100% auto; }
-    50% { background-size: 110% auto; }
-    100% { background-size: 100% auto; }
+    0%   { background-size: 100% 100vh; }
+    50% { background-size: 110% 110vh; }
+    100% { background-size: 100% 100vh; }
   }
 
 @media (max-width:600px){
     .container {
         width: 100%;
     }
+
+    
 }
